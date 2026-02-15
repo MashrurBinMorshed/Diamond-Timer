@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Diamond Timer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <div class="title">Diamond Timer</div>
+    <div class="time" id="time">25:00</div>
+
+    <canvas id="c" width="360" height="480"></canvas>
+
+    <div class="controls">
+      <input id="mins" type="number" min="1" max="180" value="25" />
+      <button id="set">Set</button>
+      <button id="start">Start</button>
+      <button id="pause">Pause</button>
+      <button id="reset">Reset</button>
+    </div>
+  </div>
+
+  <script src="renderer.js"></script>
+</body>
+</html>

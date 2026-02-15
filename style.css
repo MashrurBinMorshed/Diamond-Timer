@@ -1,0 +1,91 @@
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  min-height: 100vh;
+  background:
+    radial-gradient(900px 600px at 20% 5%, #4023a8 0%, transparent 70%),
+    radial-gradient(900px 600px at 85% 100%, #1f2d8f 0%, transparent 70%),
+    #0f1031;
+  color: #f0edff;
+  font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+}
+.app{
+  width: min(520px, 100%);
+  margin: 0 auto;
+  padding: 18px 14px 20px;
+}
+.title{
+  text-align:center;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #cdc6ff;
+}
+.time{
+  text-align:center;
+  font-size: 48px;
+  font-weight: 800;
+  margin: 8px 0 10px;
+  color: #fffef0;
+  text-shadow: 0 0 20px rgba(255,228,90,.24);
+  font-family: "Cascadia Mono", "Consolas", monospace;
+}
+canvas{
+  display:block;
+  width: min(360px, 100%);
+  height: auto;
+  margin: 0 auto;
+  border-radius: 20px;
+  background: linear-gradient(180deg, #2b1d77 0%, #141740 100%);
+  border: 1px solid rgba(168,155,255,.35);
+  box-shadow: 0 18px 56px rgba(0,0,0,.52);
+}
+.controls{
+  display:flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content:center;
+  align-items:center;
+  margin-top: 14px;
+}
+input{
+  width: 90px;
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px solid rgba(168,155,255,.45);
+  background: rgba(20,19,54,.9);
+  color:#fff;
+  outline:none;
+}
+button{
+  padding: 10px 14px;
+  border-radius: 12px;
+  border: 1px solid rgba(168,155,255,.45);
+  background: rgba(58,45,133,.55);
+  color: #fff;
+  font-weight: 700;
+  cursor:pointer;
+}
+button:hover{
+  background: rgba(86,67,190,.62);
+  border-color: rgba(255,228,90,.52);
+}
+
+@media (max-width: 420px) {
+  .app {
+    padding: 12px 8px 14px;
+  }
+
+  .time {
+    font-size: 40px;
+  }
+
+  .controls {
+    gap: 8px;
+  }
+
+  button {
+    padding: 9px 11px;
+  }
+}
